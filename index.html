@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>KadTools Index</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="scripts/highlight.min.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="styles/site.lumen.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" style="background-image:url()"  href="index.html">KadTools</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="module-kad.html">kad</a></li><li><a href="module-kad_constants.html">kad/constants</a></li><li><a href="module-kad_contacts.html">kad/contacts</a></li><li><a href="module-kad_hooks.html">kad/hooks</a></li><li><a href="module-kad_storage.html">kad/storage</a></li><li><a href="module-kad_transports.html">kad/transports</a></li><li><a href="module-kad_utils.html">kad/utils</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="AddressPortContact.html">AddressPortContact</a></li><li><a href="Bucket.html">Bucket</a></li><li><a href="Contact.html">Contact</a></li><li><a href="HTTPTransport.html">HTTPTransport</a></li><li><a href="Item.html">Item</a></li><li><a href="Logger.html">Logger</a></li><li><a href="Message.html">Message</a></li><li><a href="module-kad_storage.FS.html">kad/storage.FS</a></li><li><a href="module-kad_storage.LocalStorage.html">kad/storage.LocalStorage</a></li><li><a href="module-kad_storage.MemStore.html">kad/storage.MemStore</a></li><li><a href="Node.html">Node</a></li><li><a href="Router.html">Router</a></li><li><a href="RPC.html">RPC</a></li><li><a href="TCPTransport.html">TCPTransport</a></li><li><a href="UDPTransport.html">UDPTransport</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="HTTPTransport.html#event:CONTACT_SEEN">HTTPTransport#event:CONTACT_SEEN</a></li><li><a href="HTTPTransport.html#event:FIND_NODE">HTTPTransport#event:FIND_NODE</a></li><li><a href="HTTPTransport.html#event:FIND_VALUE">HTTPTransport#event:FIND_VALUE</a></li><li><a href="HTTPTransport.html#event:MESSAGE_DROP">HTTPTransport#event:MESSAGE_DROP</a></li><li><a href="HTTPTransport.html#event:PING">HTTPTransport#event:PING</a></li><li><a href="HTTPTransport.html#event:ready">HTTPTransport#event:ready</a></li><li><a href="HTTPTransport.html#event:STORE">HTTPTransport#event:STORE</a></li><li><a href="HTTPTransport.html#event:TIMEOUT">HTTPTransport#event:TIMEOUT</a></li><li><a href="Node.html#event:connect">Node#event:connect</a></li><li><a href="Node.html#event:disconnect">Node#event:disconnect</a></li><li><a href="Node.html#event:error">Node#event:error</a></li><li><a href="Node.html#event:join">Node#event:join</a></li><li><a href="Node.html#event:leave">Node#event:leave</a></li><li><a href="Router.html#event:add">Router#event:add</a></li><li><a href="Router.html#event:drop">Router#event:drop</a></li><li><a href="Router.html#event:shift">Router#event:shift</a></li><li><a href="RPC.html#event:CONTACT_SEEN">RPC#event:CONTACT_SEEN</a></li><li><a href="RPC.html#event:FIND_NODE">RPC#event:FIND_NODE</a></li><li><a href="RPC.html#event:FIND_VALUE">RPC#event:FIND_VALUE</a></li><li><a href="RPC.html#event:MESSAGE_DROP">RPC#event:MESSAGE_DROP</a></li><li><a href="RPC.html#event:PING">RPC#event:PING</a></li><li><a href="RPC.html#event:ready">RPC#event:ready</a></li><li><a href="RPC.html#event:STORE">RPC#event:STORE</a></li><li><a href="RPC.html#event:TIMEOUT">RPC#event:TIMEOUT</a></li><li><a href="TCPTransport.html#event:CONTACT_SEEN">TCPTransport#event:CONTACT_SEEN</a></li><li><a href="TCPTransport.html#event:FIND_NODE">TCPTransport#event:FIND_NODE</a></li><li><a href="TCPTransport.html#event:FIND_VALUE">TCPTransport#event:FIND_VALUE</a></li><li><a href="TCPTransport.html#event:MESSAGE_DROP">TCPTransport#event:MESSAGE_DROP</a></li><li><a href="TCPTransport.html#event:PING">TCPTransport#event:PING</a></li><li><a href="TCPTransport.html#event:ready">TCPTransport#event:ready</a></li><li><a href="TCPTransport.html#event:STORE">TCPTransport#event:STORE</a></li><li><a href="TCPTransport.html#event:TIMEOUT">TCPTransport#event:TIMEOUT</a></li><li><a href="UDPTransport.html#event:CONTACT_SEEN">UDPTransport#event:CONTACT_SEEN</a></li><li><a href="UDPTransport.html#event:FIND_NODE">UDPTransport#event:FIND_NODE</a></li><li><a href="UDPTransport.html#event:FIND_VALUE">UDPTransport#event:FIND_VALUE</a></li><li><a href="UDPTransport.html#event:MESSAGE_DROP">UDPTransport#event:MESSAGE_DROP</a></li><li><a href="UDPTransport.html#event:PING">UDPTransport#event:PING</a></li><li><a href="UDPTransport.html#event:ready">UDPTransport#event:ready</a></li><li><a href="UDPTransport.html#event:STORE">UDPTransport#event:STORE</a></li><li><a href="UDPTransport.html#event:TIMEOUT">UDPTransport#event:TIMEOUT</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="tutorials.list.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="tutorial-custom-contacts.html">Custom Contacts</a></li><li><a href="tutorial-custom-storage.html">Custom Storage Adapters</a></li><li><a href="tutorial-custom-transports.html">Custom Transport Adapters</a></li><li><a href="tutorial-protocol-spec.html">Protocol Specification</a></li><li><a href="tutorial-using-hooks.html">Using Hooks</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="externals.list.html" class="dropdown-toggle" data-toggle="dropdown">Externals<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="external-kad-fs.html">kad-fs</a></li><li><a href="external-kad-localstorage.html">kad-localstorage</a></li><li><a href="external-kad-memstore.html">kad-memstore</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+		<div class="col-sm-3 col-md-4">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+    <section class="readme-section">
+        <article><h1><img src="https://avatars1.githubusercontent.com/u/16706596?v=3&amp;s=200" alt="Kad"></h1><p><a href="https://travis-ci.org/kadtools/kad"><img src="https://img.shields.io/travis/kadtools/kad/master.svg?style=flat-square" alt="Build Status"></a>
+<a href="https://coveralls.io/r/kadtools/kad"><img src="https://img.shields.io/coveralls/kadtools/kad.svg?style=flat-square" alt="Coverage Status"></a>
+<a href="https://www.npmjs.com/package/kad"><img src="https://img.shields.io/npm/v/kad.svg?style=flat-square" alt="NPM"></a></p>
+<p>Extensible implementation of the
+<a href="http://www.scs.stanford.edu/~dm/home/papers/kpos.pdf">Kademlia</a> distributed
+hash table for Node.js and the browser.</p>
+<h2>Quick Start</h2><p><strong>For complete documentation on using and extending Kad,
+<a href="http://kadtools.github.io">read the documentation</a>.</strong></p>
+<pre class="prettyprint source"><code>npm install kad</code></pre><p>Create your node, plug in your storage adapter, join the network, and party!</p>
+<pre class="prettyprint source"><code>var kad = require('kad');
+
+var seed = {
+  address: '127.0.0.1',
+  port: 1338
+};
+
+var dht = new kad.Node({
+  transport: kad.transports.UDP(kad.contacts.AddressPortContact({
+    address: '127.0.0.1',
+    port: 1337
+  })),
+  storage: kad.storage.FS('path/to/datadir')
+});
+
+dht.connect(seed, function(err) {
+  // dht.get(key, callback);
+  // dht.put(key, value, callback);
+});</code></pre><p>You can build Kad for the browser by running:</p>
+<pre class="prettyprint source"><code>npm run build</code></pre><blockquote>
+<p>This will output to <code>dist/kad.browser.js</code> and will bind to <code>window</code> when
+loaded in your web application.</p>
+</blockquote>
+<p>You can run a network simulation locally using the included simulator. This
+will create <code>n</code> nodes (as you define) and connect them to each other, sending
+<code>STORE</code> messages on an interval and printing information to the console.</p>
+<pre class="prettyprint source"><code># use the default of 6 nodes
+npm run simulation
+# specify as many nodes as you like
+npm run simulation 128</code></pre><h2>Transports</h2><p>Kad ships with support for UDP, TCP, and HTTP transports. To explicitly define
+the transport to use, set the <code>transport</code> option to the appropriate value. See
+the documentation on <a href="RPC.html">RPC</a> and <a href="Contact.html">Contact</a> for more information.</p>
+<pre class="prettyprint source"><code>var dht = new kademlia.Node({
+  // ...
+  transport: kademlia.transports.TCP(contact, options)
+});</code></pre><p>If you would like to author your own transport adapter, see
+<a href="https://github.com/kadtools/kad-transport-boilerplate">kad-transport-boilerplate</a>.</p>
+<h3>Community Transport Adapters</h3><ul>
+<li><a href="https://github.com/kadtools/kad-webrtc">WebRTC</a></li>
+</ul>
+<h2>Persistence</h2><p>Kad does not make assumptions about how your nodes will store their data,
+instead relying on you to implement a storage adapter of your choice. This is
+as simple as providing <code>get(key, callback)</code>, <code>put(key, value, callback)</code>,
+<code>del(key, callback)</code>, and <code>createReadStream()</code> methods.</p>
+<p>This works well with <a href="https://github.com/rvagg/node-levelup">levelup</a>, but you
+could conceivably implement any storage layer you like provided you expose the
+interface described above. Some adapters have already been contributed by the
+community, listed below.</p>
+<h3>Community Storage Adapters</h3><ul>
+<li><a href="https://github.com/kadtools/kad-localstorage">Local Storage</a></li>
+<li><a href="https://github.com/kadtools/kad-mongo">MongoDB</a></li>
+<li><a href="https://github.com/kadtools/kad-fs">File System</a></li>
+</ul>
+<h2>Extensions</h2><h3>Sybil/Spartacus Mitigation</h3><p>You can use <a href="https://github.com/kadtools/kad-spartacus">kad-spartacus</a>
+to mitigate 2 types of attacks to which a Kademlia DHT may be vulnerable: the
+Sybil attack and it's variant, Spartacus.</p>
+<p><a href="https://github.com/kadtools/kad-spartacus/blob/master/README.md">Read More →</a></p>
+<h3>NAT Traversal</h3><p>You can use <a href="https://github.com/kadtools/kad-traverse">kad-traverse</a>
+to ensure your nodes are able to communicate when behind a NAT or firewall. The
+extension will use different strategies based on the network configuration.</p>
+<p><a href="https://github.com/kadtools/kad-traverse/blob/master/README.md">Read More →</a></p>
+<h3>Performance Monitoring</h3><p>You can use <a href="https://github.com/kadtools/kad-telemetry">kad-telemetry</a> to track
+the performance of your peers and extend the default routing algorithm to
+prioritize the selection of nodes with a higher score.</p>
+<p><a href="https://github.com/kadtools/kad-telemetry/blob/master/README.md">Read More →</a></p>
+<h3>Publish &amp; Subscribe</h3><p>You can use <a href="https://github.com/kadtools/kad-quasar">kad-quasar</a> to extend kad
+with support for <em>probabilistic</em>, topic-based publish/subscribe capabilities.</p>
+<p><a href="https://github.com/kadtools/kad-quasar/blob/master/README.md">Read More →</a></p>
+<h2>License</h2><p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see http://www.gnu.org/licenses/.</p></article>
+    </section>
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+<div class="modal fade" id="searchResults">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Search results</h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a>
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+<script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	$('pre').each(function(i, block) {
+		hljs.highlightBlock(block);
+	});
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			var id = $( heading ).attr( "id" );
+			return id && id.replace(/\~/g, '-inner-').replace(/\./g, '-static-') || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		SearcherDisplay.init();
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>KadTools Module: kad/contacts</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="scripts/highlight.min.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="styles/site.lumen.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" style="background-image:url()"  href="index.html">KadTools</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="module-kad.html">kad</a></li><li><a href="module-kad_constants.html">kad/constants</a></li><li><a href="module-kad_contacts.html">kad/contacts</a></li><li><a href="module-kad_hooks.html">kad/hooks</a></li><li><a href="module-kad_storage.html">kad/storage</a></li><li><a href="module-kad_transports.html">kad/transports</a></li><li><a href="module-kad_utils.html">kad/utils</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="AddressPortContact.html">AddressPortContact</a></li><li><a href="Bucket.html">Bucket</a></li><li><a href="Contact.html">Contact</a></li><li><a href="HTTPTransport.html">HTTPTransport</a></li><li><a href="Item.html">Item</a></li><li><a href="Logger.html">Logger</a></li><li><a href="Message.html">Message</a></li><li><a href="module-kad_storage.FS.html">kad/storage.FS</a></li><li><a href="module-kad_storage.LocalStorage.html">kad/storage.LocalStorage</a></li><li><a href="module-kad_storage.MemStore.html">kad/storage.MemStore</a></li><li><a href="Node.html">Node</a></li><li><a href="Router.html">Router</a></li><li><a href="RPC.html">RPC</a></li><li><a href="TCPTransport.html">TCPTransport</a></li><li><a href="UDPTransport.html">UDPTransport</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="HTTPTransport.html#event:CONTACT_SEEN">HTTPTransport#event:CONTACT_SEEN</a></li><li><a href="HTTPTransport.html#event:FIND_NODE">HTTPTransport#event:FIND_NODE</a></li><li><a href="HTTPTransport.html#event:FIND_VALUE">HTTPTransport#event:FIND_VALUE</a></li><li><a href="HTTPTransport.html#event:MESSAGE_DROP">HTTPTransport#event:MESSAGE_DROP</a></li><li><a href="HTTPTransport.html#event:PING">HTTPTransport#event:PING</a></li><li><a href="HTTPTransport.html#event:ready">HTTPTransport#event:ready</a></li><li><a href="HTTPTransport.html#event:STORE">HTTPTransport#event:STORE</a></li><li><a href="HTTPTransport.html#event:TIMEOUT">HTTPTransport#event:TIMEOUT</a></li><li><a href="Node.html#event:connect">Node#event:connect</a></li><li><a href="Node.html#event:disconnect">Node#event:disconnect</a></li><li><a href="Node.html#event:error">Node#event:error</a></li><li><a href="Node.html#event:join">Node#event:join</a></li><li><a href="Node.html#event:leave">Node#event:leave</a></li><li><a href="Router.html#event:add">Router#event:add</a></li><li><a href="Router.html#event:drop">Router#event:drop</a></li><li><a href="Router.html#event:shift">Router#event:shift</a></li><li><a href="RPC.html#event:CONTACT_SEEN">RPC#event:CONTACT_SEEN</a></li><li><a href="RPC.html#event:FIND_NODE">RPC#event:FIND_NODE</a></li><li><a href="RPC.html#event:FIND_VALUE">RPC#event:FIND_VALUE</a></li><li><a href="RPC.html#event:MESSAGE_DROP">RPC#event:MESSAGE_DROP</a></li><li><a href="RPC.html#event:PING">RPC#event:PING</a></li><li><a href="RPC.html#event:ready">RPC#event:ready</a></li><li><a href="RPC.html#event:STORE">RPC#event:STORE</a></li><li><a href="RPC.html#event:TIMEOUT">RPC#event:TIMEOUT</a></li><li><a href="TCPTransport.html#event:CONTACT_SEEN">TCPTransport#event:CONTACT_SEEN</a></li><li><a href="TCPTransport.html#event:FIND_NODE">TCPTransport#event:FIND_NODE</a></li><li><a href="TCPTransport.html#event:FIND_VALUE">TCPTransport#event:FIND_VALUE</a></li><li><a href="TCPTransport.html#event:MESSAGE_DROP">TCPTransport#event:MESSAGE_DROP</a></li><li><a href="TCPTransport.html#event:PING">TCPTransport#event:PING</a></li><li><a href="TCPTransport.html#event:ready">TCPTransport#event:ready</a></li><li><a href="TCPTransport.html#event:STORE">TCPTransport#event:STORE</a></li><li><a href="TCPTransport.html#event:TIMEOUT">TCPTransport#event:TIMEOUT</a></li><li><a href="UDPTransport.html#event:CONTACT_SEEN">UDPTransport#event:CONTACT_SEEN</a></li><li><a href="UDPTransport.html#event:FIND_NODE">UDPTransport#event:FIND_NODE</a></li><li><a href="UDPTransport.html#event:FIND_VALUE">UDPTransport#event:FIND_VALUE</a></li><li><a href="UDPTransport.html#event:MESSAGE_DROP">UDPTransport#event:MESSAGE_DROP</a></li><li><a href="UDPTransport.html#event:PING">UDPTransport#event:PING</a></li><li><a href="UDPTransport.html#event:ready">UDPTransport#event:ready</a></li><li><a href="UDPTransport.html#event:STORE">UDPTransport#event:STORE</a></li><li><a href="UDPTransport.html#event:TIMEOUT">UDPTransport#event:TIMEOUT</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="tutorials.list.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="tutorial-custom-contacts.html">Custom Contacts</a></li><li><a href="tutorial-custom-storage.html">Custom Storage Adapters</a></li><li><a href="tutorial-custom-transports.html">Custom Transport Adapters</a></li><li><a href="tutorial-protocol-spec.html">Protocol Specification</a></li><li><a href="tutorial-using-hooks.html">Using Hooks</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="externals.list.html" class="dropdown-toggle" data-toggle="dropdown">Externals<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="external-kad-fs.html">kad-fs</a></li><li><a href="external-kad-localstorage.html">kad-localstorage</a></li><li><a href="external-kad-memstore.html">kad-memstore</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+		<div class="col-sm-3 col-md-4">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Module: kad/contacts</h1>
+<section>
+
+<header>
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="lib_contacts_index.js.html">lib/contacts/index.js</a>,
+				 <a href="lib_contacts_index.js.html#sunlight-1-line-1">line 1</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        <dl>
+            
+<hr>
+<dt class="name" id=".AddressPortContact">
+    <h4><span class="type-signature">&lt;static> </span>AddressPortContact<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <a href="AddressPortContact.html">AddressPortContact</a>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="lib_contacts_index.js.html">lib/contacts/index.js</a>,
+				 <a href="lib_contacts_index.js.html#sunlight-1-line-9">line 9</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+<div class="modal fade" id="searchResults">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Search results</h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a>
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+<script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	$('pre').each(function(i, block) {
+		hljs.highlightBlock(block);
+	});
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			var id = $( heading ).attr( "id" );
+			return id && id.replace(/\~/g, '-inner-').replace(/\./g, '-static-') || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		SearcherDisplay.init();
+	});
+</script>
+
+</body>
+</html>
